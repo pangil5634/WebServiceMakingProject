@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin : 0;
+            }
+            span {
+                color: red;
+            }
+            div {
+                margin: 10px;
+                padding : 10px;
+                border-radius: 10px;
+                background-color: aqua;
+            }
+            body {
+                width: 900px;
+                margin : 0 auto;
+                padding : 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>form 태그 연습</h1>
+            <form action="save_ok.php">
+                <label for="fname">
+                    <span>*</span>이름 :
+                </label>
+                <input type="text" id="uname" name="uname" required="required"><br>
+
+                <label for="pwd">
+                    <span>*</span>비밀번호 :
+                </label>
+                <input type="password" id="pwd" name="pwd" placeholder='4글자 이상 입력'><br>
+
+                <label for="mobile">
+                    핸드폰 번호 :
+                </label>
+                <input
+                    type="text"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="00*-000*-0000"
+                    pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
+                    maxlength="13"><br>
+
+                <label for="gender">
+                    성별 :
+                </label>
+                <input type="radio" id="gender1" name="gender1" value="M" checked="checked">남
+                <input type="radio" id="gender2" name="gender2" value="W">여
+                <br>
+
+                <label for="hobby1">
+                    취미 :
+                </label>
+                <input type="checkbox" id="hobby1" name="hobby1" value="1" checked="checked">영화감상
+                <input type="checkbox" id="hobby2" name="hobby2" value="2">독서
+                <input type="checkbox" id="hobby3" name="hobby3" value="3">스포츠<br>
+
+                <br>
+
+                <input type="submit" value="저장">
+                <input type="reset" value="재입력">
+
+            </form>
+        </div>
+
+        <div>
+            <h1>select 태그 연습</h1>
+            <select name="city">
+                <option value="1">강남구</option>
+                <option value="2" selected="selected">서초구</option>
+                <option value="3">송파구</option>
+            </select>
+            <br>
+            <select name="city">
+                <optgroup label="서울">
+                    <option value="1">강남구</option>
+                    <option value="2">서초구</option>
+                    <option value="3">송파구</option>
+                </optgroup>
+
+                <optgroup label="경기도">
+                    <option value="1">성남시</option>
+                    <option value="2">수원시</option>
+                    <option value="3">용인시</option>
+                </optgroup>
+            </select>
+
+        </div>
+
+        <div>
+            <h1>textarea 태그 연습</h1>
+            <textarea name="content" cols="40" rows="5"></textarea>
+        </div>
+
+        <div>
+            <h1>date 태그 연습</h1>
+            <input type="date" min="2019-01-01" max="2020-12-31" name="fromdate">
+        </div>
+
+        <div>
+            <h1>color 태그 연습</h1>
+            <input type="color" name="color" value="#ff0000">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <head> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>
+        HTML Forms</h2>
+
+    <p>
+        사용자 정보 입력</p>
+
+    <form action="form_ok.php" method="post">
+        <fieldset style="width : 250px; margin : 5px">
+            <legend>개인 정보 입력</legend>
+            <label for="uname">이름 :</label>
+            <input type="text" id="uname" name="uname" placeholder='이름을 입력' autofocus><br>
+            
+            <br>
+
+            <label for="email">이메일 :</label>
+            <input type="text" id="email" name="email" ><br>
+
+            <br>
+            
+        </fieldset>
+        
+        <input type="submit" value="Submit">
+        <input type = "reset" value = "Reset">
+    </form>
+</body>
+</html>
